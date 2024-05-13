@@ -218,6 +218,13 @@
                 wire:click="decrement">
                 -
             </x-primary-button>
+            <br />
+            <br />
+
+            <x-primary-button
+                wire:click="resetToDefault">
+                RESET TO DEFAULT
+            </x-primary-button>
         </div>
     </div>
 </div>
