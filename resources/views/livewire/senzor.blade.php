@@ -176,6 +176,20 @@
                 </p>
             </div>
 
+            <x-primary-button
+                wire:click="toggleFire">
+                Fire
+            </x-primary-button>
+
+            <x-primary-button
+                wire:click="toggleSmoke">
+                Smoke
+            </x-primary-button>
+
+            <x-primary-button
+                wire:click="toggleHumidity">
+                Humidity
+            </x-primary-button>
 
             <x-primary-button
                 wire:click="toggleBuzzer">
@@ -186,23 +200,6 @@
                 wire:click="toggleLed">
                 Led
             </x-primary-button>
-
-
-            <x-primary-button
-                wire:click="toggleSmoke">
-                Smoke
-            </x-primary-button>
-
-            <x-primary-button
-                wire:click="toggleFire">
-                Fire
-            </x-primary-button>
-
-            <x-primary-button
-                wire:click="toggleHumidity">
-                Humidity
-            </x-primary-button>
-
 
             <x-primary-button
                 wire:click="">
