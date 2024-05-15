@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome');
+//Route::view('/', 'welcome');
 
-Route::get('/data', function () {
+Route::get('/date', function () {
     return \App\Models\Sensor::query()->limit(100)->get();
+});
+
+
+Route::get('/', function (Request $request) {
+    info($request->all());
+    return response()->json([
+        'status' => 'ok',
+        'data' => $request->all()
+    ]);
 });
 
 Route::view('dashboard', 'dashboard')

@@ -41,7 +41,7 @@ class Sensor extends Component
 
     public function mount()
     {
-//        $senzor = Senzor::latest()->first();
+    //    $senzor = Senzor::latest()->first();
     }
 
     public function toggleBuzzer()
