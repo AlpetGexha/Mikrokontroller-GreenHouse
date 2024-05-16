@@ -41,30 +41,32 @@ class Sensor extends Component
 
     public function mount()
     {
-    //    $senzor = Senzor::latest()->first();
+//        $senzor = Senzor::create($this->data);
+//        $senzors = Senzor::latest()->first();
     }
 
-    public function toggleBuzzer()
+
+    public function toggleBuzzer() :void
     {
         $this->buzzer = !$this->buzzer;
     }
 
-    public function toggleLed()
+    public function toggleLed(): void
     {
         $this->led = !$this->led;
     }
 
-    public function increment()
+    public function increment(): void
     {
         $this->count++;
     }
 
-    public function decrement()
+    public function decrement(): void
     {
         $this->count--;
     }
 
-    public function toggleFire()
+    public function toggleFire(): void
     {
         $this->message = '';
         $this->fire = !$this->fire;
@@ -74,7 +76,7 @@ class Sensor extends Component
 
     }
 
-    public function toggleSmoke()
+    public function toggleSmoke(): void
     {
         $this->message = '';
 
@@ -84,7 +86,7 @@ class Sensor extends Component
             $this->message = "SMOKE. SMOKE. SMOKE, YOUR SERA ITS ON SMOKE";
     }
 
-    public function toggleHumidity()
+    public function toggleHumidity(): void
     {
         $this->message = '';
         $this->humidityValue = 10;
